@@ -82,9 +82,9 @@
     UIImage *img = [UIImage imageNamed:@"king2.png"];  // ボタンにする画像を生成する
     gamecenterButton.frame = CGRectMake(43, 19, 66, 52);
     [gamecenterButton setBackgroundImage:img forState:UIControlStateNormal];  // 画像をセットする
-    // ボタンが押された時にhogeメソッドを呼び出す
-    [gamecenterButton addTarget:self
-                         action:@selector(authenticateLocalPlayer:) forControlEvents:UIControlEventTouchUpInside];
+//    // ボタンが押された時にhogeメソッドを呼び出す
+//    [gamecenterButton addTarget:self
+//                         action:@selector(authenticateLocalPlayer:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:gamecenterButton];
 
 }
@@ -275,21 +275,23 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-/*GameCenterにログインしているか確認処理
- * ログインしていなければログイン画面を表示*/
- -(void)authenticateLocalPlayer:(UIButton*)button
- {
- GKLocalPlayer* player = [GKLocalPlayer localPlayer];
- player.authenticateHandler = ^(UIViewController* ui, NSError* error )
- {
- if( nil != ui )
- {
- [self presentViewController:ui animated:YES completion:nil];
- }
- };
-     [self showRanking];
-     
- }
+
+///*GameCenterにログインしているか確認処理
+// * ログインしていなければログイン画面を表示*/
+// -(void)authenticateLocalPlayer:(UIButton*)button
+// {
+// GKLocalPlayer* player = [GKLocalPlayer localPlayer];
+// player.authenticateHandler = ^(UIViewController* ui, NSError* error )
+// {
+// if( nil != ui )
+// {
+// [self presentViewController:ui animated:YES completion:nil];
+// }
+// };
+//     [self showRanking];
+//     
+// }
+
 
 
 
