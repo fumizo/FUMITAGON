@@ -16,12 +16,14 @@
 
 #import "MYBlurIntroductionView.h"
 
+#import "EAIntroView.h"
+
 
 #import "ChangeRGB.h"
 //http://tryworks-design.com/?p=2260
 //webのカラーコードをiOS用に変換してくれる
 
-@interface ViewController : UIViewController <DMCrookedSwipeViewDelegate,OptionViewControllerDelegate,GKGameCenterControllerDelegate> {
+@interface ViewController : UIViewController <DMCrookedSwipeViewDelegate,OptionViewControllerDelegate,GKGameCenterControllerDelegate,EAIntroDelegate> {
     //代わりにできるマンだよ
     
     IBOutlet UIImageView *octagon;
@@ -82,6 +84,8 @@
 }
 
 
+@property (weak, nonatomic) IBOutlet EAIntroView *introView;
+
 -(void)add:(CGRect)rect;
 
 - (void) hanteiWithMarble:(DMCrookedSwipeView *)marbleForhantei; //わしこれできるよ
@@ -89,10 +93,7 @@
 //-(void)volumeDown:(int)volume2; //わしこれできるよ
 //
 //@property(nonatomic) int volume;
-
-
 //@end
 //@interface userDefaultSounds: NSUserDefaults;
 //@property BOOL sounds;
-
 @end

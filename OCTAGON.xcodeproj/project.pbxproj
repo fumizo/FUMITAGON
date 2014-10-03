@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4FC983B019D1543000177DA7 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC983AF19D1543000177DA7 /* GameKit.framework */; };
+		4FCBFFB519DEA2C400AA4CBB /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBFFB219DEA2C400AA4CBB /* EAIntroPage.m */; };
+		4FCBFFB619DEA2C400AA4CBB /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBFFB419DEA2C400AA4CBB /* EAIntroView.m */; };
+		4FCBFFB819DEB5EC00AA4CBB /* karidayo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCBFFB719DEB5EC00AA4CBB /* karidayo.png */; };
 		AF9F100119D1517E00F98BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9F100019D1517E00F98BCE /* Main.storyboard */; };
 		AFC7450319D13EC50090C185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7450219D13EC50090C185 /* Foundation.framework */; };
 		AFC7450519D13EC50090C185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7450419D13EC50090C185 /* CoreGraphics.framework */; };
@@ -108,6 +111,11 @@
 
 /* Begin PBXFileReference section */
 		4FC983AF19D1543000177DA7 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		4FCBFFB119DEA2C400AA4CBB /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		4FCBFFB219DEA2C400AA4CBB /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		4FCBFFB319DEA2C400AA4CBB /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		4FCBFFB419DEA2C400AA4CBB /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
+		4FCBFFB719DEB5EC00AA4CBB /* karidayo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = karidayo.png; path = ../karidayo.png; sourceTree = "<group>"; };
 		AF9F100019D1517E00F98BCE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AFC744FF19D13EC50090C185 /* OCTAGON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTAGON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC7450219D13EC50090C185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -235,9 +243,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FCBFFB019DEA2C400AA4CBB /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				4FCBFFB719DEB5EC00AA4CBB /* karidayo.png */,
+				4FCBFFB119DEA2C400AA4CBB /* EAIntroPage.h */,
+				4FCBFFB219DEA2C400AA4CBB /* EAIntroPage.m */,
+				4FCBFFB319DEA2C400AA4CBB /* EAIntroView.h */,
+				4FCBFFB419DEA2C400AA4CBB /* EAIntroView.m */,
+			);
+			path = EAIntroView;
+			sourceTree = "<group>";
+		};
 		AFC744F619D13EC50090C185 = {
 			isa = PBXGroup;
 			children = (
+				4FCBFFB019DEA2C400AA4CBB /* EAIntroView */,
 				AFC745E019D1433B0090C185 /* Default-568h@2x.png */,
 				AFC7450819D13EC50090C185 /* OCTAGON */,
 				AFC7452719D13EC50090C185 /* OCTAGONTests */,
@@ -616,6 +637,7 @@
 				AFC7459D19D13F790090C185 /* wood-white_texture.jpg in Resources */,
 				AFC745D819D140AA0090C185 /* gooon.mp3 in Resources */,
 				AFC7450D19D13EC50090C185 /* InfoPlist.strings in Resources */,
+				4FCBFFB819DEB5EC00AA4CBB /* karidayo.png in Resources */,
 				AFC7458019D13F790090C185 /* octagon_wood_label.png in Resources */,
 				AFC7458A19D13F790090C185 /* lgp01a201304160100.jpg in Resources */,
 				AFC7458F19D13F790090C185 /* lgp01a201403020000 のコピー.png in Resources */,
@@ -650,8 +672,10 @@
 				AFC745AB19D13F8E0090C185 /* ChangeRGB.m in Sources */,
 				AFC745AC19D13F8E0090C185 /* DMCrookedSwipeView.m in Sources */,
 				AFC745AD19D13F8E0090C185 /* MYBlurIntroductionView.m in Sources */,
+				4FCBFFB519DEA2C400AA4CBB /* EAIntroPage.m in Sources */,
 				AFC745AE19D13F8E0090C185 /* MYIntroductionPanel.m in Sources */,
 				AFC745B919D13FB90090C185 /* AppDelegate.m in Sources */,
+				4FCBFFB619DEA2C400AA4CBB /* EAIntroView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

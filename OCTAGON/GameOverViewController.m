@@ -64,15 +64,13 @@
     NSNotificationCenter *sound = [NSNotificationCenter defaultCenter];
     [sound addObserver:self selector:@selector(sound:) name:@"sound" object:nil];
     [[NSNotificationCenter defaultCenter] postNotification:sound];
-
      */
+    
     [self volume];
     [gooon play];
     if (sounds == true) {
         [gooon play];
     }
-    
-
 }
 
 - (void)makeGamecenterButton{
@@ -86,7 +84,6 @@
 //    [gamecenterButton addTarget:self
 //                         action:@selector(authenticateLocalPlayer:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:gamecenterButton];
-
 }
 
 - (void) highScore{
@@ -95,10 +92,7 @@
     if (score > highScore){
         
         [self makeGamecenterButton];
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"congratulation!!" message:@"王冠をタップしてハイスコアをゲームセンターに登録しよう！" delegate:nil cancelButtonTitle:@"OK!" otherButtonTitles: nil];
-        [alert show];
-        
+        [self alert];
         
         NSLog(@"ハイスコアが更新されたよ");
         highScore = score;
@@ -124,6 +118,14 @@
 
     }
     highScoreLabel.text = [NSString stringWithFormat:@"%d",highScore];
+}
+
+- (void)alert{
+    //スリープ
+    [NSThread sleepForTimeInterval:5.0f];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"congratulation!!" message:@"王冠をタップしてハイスコアをゲームセンターに登録しよう！" delegate:nil cancelButtonTitle:@"OK!" otherButtonTitles: nil];
+    [alert show];
 }
 
 
